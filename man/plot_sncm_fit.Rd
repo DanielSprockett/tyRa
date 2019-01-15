@@ -4,10 +4,10 @@
 \alias{plot_sncm_fit}
 \title{plots the fit of an OTU table to \code{sncm}}
 \usage{
-plot_sncm_fit(spp.out, fill = NULL, title = NULL)
+plot_sncm_fit(spp_out = spp_out, fill = NULL, title = NULL)
 }
 \arguments{
-\item{spp.out}{the output from \code{\link{fit_sncm}}}
+\item{spp_out}{the output from \code{\link{fit_sncm}}}
 
 \item{fill}{(optional) can either be set to fit_class to color by prediction (default), or by a taxonomic level
 available in \code{\link[phyloseq]{rank_names}}}
@@ -19,12 +19,6 @@ This function returns a plot of the fit of the OTU table to sncm
 }
 \description{
 This funtion plots the output from \code{\link{fit_sncm}}
-}
-\examples{
-spp <- otu_table(ps)@.Data
-spp.out <- fit_sncm(spp, pool=NULL, taxon=data.frame(tax_table(ps)))
-p <- plot_sncm_fit(spp.out)
-p <- plot_sncm_fit(spp.out = spp.out, fill_var = "fit_class", title_var = "Fit to Neutral Model")
 }
 \seealso{
 \code{\link{fit_sncm}}

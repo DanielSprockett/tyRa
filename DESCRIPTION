@@ -1,10 +1,10 @@
 Package: tyRa
 Type: Package
-Title: Builds Models
+Title: Builds Models for Microbiome Data
 Version: 0.1.0
 Authors@R: person("Daniel", "Sprockett", email = 
                   "daniel.sprockett@stanford.edu", 
-                  role = c("aut", "cre"))
+                  role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2620-7555"))
 Maintainer: The package maintainer <daniel.sprockett@stanford.edu>
 Description: Builds models from microbiome amplicon datasets.
 License: MIT + file LICENSE

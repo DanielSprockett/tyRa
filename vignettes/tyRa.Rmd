@@ -54,7 +54,7 @@ Currently, there is only model available, but I'll be adding more over time. We'
 
 ```{r fit model}
 
-spp.out <- fit_sncm(spp = otu_table(ps)@.Data, pool=NULL, taxon=data.frame(tax_table(ps)))
+spp.out <- tyRa::fit_sncm(spp = otu_table(ps)@.Data, pool=NULL, taxon=data.frame(tax_table(ps)))
 
 ```
 

@@ -21,13 +21,9 @@
 #' @seealso
 #' \code{\link{plot_sncm_fit}}
 #'
-#' @examples
-#' spp <- otu_table(ps)@.Data
-#' spp2 <- otu_table(ps2)@.Data
-#' spp.out <- fit_sncm(spp, pool=NULL, taxon=NULL)
-#' spp.out <- fit_sncm(spp, pool=spp2, taxon=data.frame(tax_table(ps)))
-#'
-fit_sncm <- function(spp, pool=NULL, taxon=NULL){
+#'#' @examples
+#' spp_out <- fit_sncm(spp = spp, pool=NULL, taxon=data.frame(tax_table(ps)))
+fit_sncm <- function(spp = spp, pool = NULL, taxon = NULL){
 
   options(warn=-1)
 
@@ -132,5 +128,6 @@ fit_sncm <- function(spp, pool=NULL, taxon=NULL){
   names(i) <- c("fitstats", "predictions")
   return(i)
 }
+
 
 

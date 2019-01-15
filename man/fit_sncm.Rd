@@ -4,7 +4,7 @@
 \alias{fit_sncm}
 \title{Fits \code{sncm} to an OTU table}
 \usage{
-fit_sncm(spp, pool = NULL, taxon = NULL)
+fit_sncm(spp = spp, pool = NULL, taxon = NULL)
 }
 \arguments{
 \item{spp}{A community table for communities of interest with local communities/samples as rows and taxa as columns.
@@ -27,13 +27,9 @@ to an OTU table and returns several fitting statistics as well as predicted occu
 based on their abundance in the metacommunity. The author of this function is Adam Burns (\email{aburns2@uoregon.edu}),
 and was originally published in \href{https://www.nature.com/articles/ismej2015142}{Burns \emph{et al.} (2016)}.
 }
-\examples{
-spp <- otu_table(ps)@.Data
-spp2 <- otu_table(ps2)@.Data
-spp.out <- fit_sncm(spp, pool=NULL, taxon=NULL)
-spp.out <- fit_sncm(spp, pool=spp2, taxon=data.frame(tax_table(ps)))
-
-}
 \seealso{
 \code{\link{plot_sncm_fit}}
+
+#' @examples
+spp_out <- fit_sncm(spp = spp, pool=NULL, taxon=data.frame(tax_table(ps)))
 }

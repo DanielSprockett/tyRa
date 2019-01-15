@@ -1,11 +1,11 @@
-title: mherit
-url: https://danielsprockett.github.io/mherit/
+title: tyRa
+url: https://danielsprockett.github.io/tyRa/
 authors:
   Daniel Sprockett:
     href: https://profiles.stanford.edu/daniel-sprockett
 template:
   params:
-    bootswatch: simplex
+    bootswatch: yeti
 navbar:
   type: inverse
 

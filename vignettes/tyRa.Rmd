@@ -62,12 +62,12 @@ spp.out <- tyRa::fit_sncm(spp = otu_table(ps)@.Data, pool=NULL, taxon=data.frame
 
 Now we'll plot the output.
 
-```{r sncm plot, message=FALSE, warning=FALSE}
+```{r sncm plot, message=FALSE, warning=FALSE, fig.width=8, fig.height=6}
 
-plot_sncm_fit(spp.out, fill = NULL, title = "Test Plot")
+plot_sncm_fit(spp.out, fill = NULL, title = "Model Fit")
 
 ```
 
-As you can see from this plot, around 80% of the ASVs in this dataset fit the neutral model. 
+As you can see from this plot, nearly 80% of the ASVs in this dataset fit the neutral model. 
 
 This is a work in progress, so please let me know if you run into any problems. Thank you!

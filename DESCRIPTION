@@ -1,0 +1,29 @@
+Package: tyRa
+Type: Package
+Title: Builds Models
+Version: 0.1.0
+Authors@R: person("Daniel", "Sprockett", email = 
+                  "daniel.sprockett@stanford.edu", 
+                  role = c("aut", "cre"))
+Maintainer: The package maintainer <daniel.sprockett@stanford.edu>
+Description: Builds models from microbiome amplicon datasets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr (>= 0.7.4),
+    ggplot2 (>= 2.2.1),
+    grid (>= 3.4.2),
+    gridExtra (>= 2.3),
+    phyloseq (>= 1.22.3),
+    Hmisc (>= 4.0.3),
+    minpack.lm (>= 1.2.1),
+    picante (>= 1.6.2),
+    reshape2 (>= 1.4.2),
+    stats4 (>= 3.4.2)
+RoxygenNote: 6.1.1
+Suggests: knitr,
+    rmarkdown,
+    testthat,
+    extrafont (>= 0.17)
+VignetteBuilder: knitr

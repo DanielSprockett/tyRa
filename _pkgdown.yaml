@@ -1,0 +1,11 @@
+title: mherit
+url: https://danielsprockett.github.io/mherit/
+authors:
+  Daniel Sprockett:
+    href: https://profiles.stanford.edu/daniel-sprockett
+template:
+  params:
+    bootswatch: simplex
+navbar:
+  type: inverse
+

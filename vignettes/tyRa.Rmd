@@ -1,0 +1,73 @@
+---
+title: "tyRa Vignette"
+author: "Daniel Sprockett"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{tyRa Vignette}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+`tyRa` ("tune-up your R analysis") is an R package that I created to facilitate building models from 16S rRNA amplicon data stored in `phyloseq` objects. 
+
+## Load Pacakages
+
+Load Packages.
+
+```{r load packages, message=FALSE, warning=FALSE}
+
+require("ggplot2")
+require("phyloseq")
+require("minpack.lm")
+require("Hmisc")
+require("stats4")
+require("tyRa")
+
+```
+
+## Import
+
+Import the phyloseq object. We'll just take the samples from healthy individuals  for this demonstration. We'll also filter down to only very prevalent taxa. 
+
+```{r import data, warning=FALSE, message=FALSE}
+
+ps <- readRDS("/Users/daniel/R_packages/tyRa/data/infants_ps.rds")
+ps
+
+```
+
+This dataset is a subset of gut microbiome profiles generated from European infants. It had already been rarefied to 10,000 sequences per sample. 
+
+# Fit Model
+
+Currently, there is only model available, but I'll be adding more over time. We'll fit this dataset with the Sloan (2006) Neutral Community Model from [Burns et al. (2016)](https://www.nature.com/articles/ismej2015142).
+
+```{r fit model}
+
+spp.out <- fit_sncm(spp = otu_table(ps)@.Data, pool=NULL, taxon=data.frame(tax_table(ps)))
+
+```
+
+# Plot
+
+Now we'll plot the output.
+
+```{r sncm plot, message=FALSE, warning=FALSE}
+
+plot_sncm_fit(spp.out, fill = NULL, title = "Test Plot")
+
+```
+
+As you can see from this plot, around 80% of the ASVs in this dataset fit the neutral model. 
+
+This is a work in progress, so please let me know if you run into any problems. Thank you!

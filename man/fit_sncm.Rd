@@ -29,7 +29,4 @@ and was originally published in \href{https://www.nature.com/articles/ismej20151
 }
 \seealso{
 \code{\link{plot_sncm_fit}}
-
-#' @examples
-spp_out <- fit_sncm(spp = spp, pool=NULL, taxon=data.frame(tax_table(ps)))
 }

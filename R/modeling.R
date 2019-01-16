@@ -20,9 +20,6 @@
 #'
 #' @seealso
 #' \code{\link{plot_sncm_fit}}
-#'
-#'#' @examples
-#' spp_out <- fit_sncm(spp = spp, pool=NULL, taxon=data.frame(tax_table(ps)))
 fit_sncm <- function(spp = spp, pool = NULL, taxon = NULL){
 
   options(warn=-1)

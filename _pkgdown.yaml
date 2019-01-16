@@ -5,7 +5,7 @@ authors:
     href: https://profiles.stanford.edu/daniel-sprockett
 template:
   params:
-    bootswatch: yeti
+    bootswatch: sandstone
 navbar:
   type: inverse
 

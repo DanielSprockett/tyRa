@@ -1,6 +1,12 @@
 # tyRa
 tyRa - "tune-up your R analysis"
 
+---
+output: github_document
+---
+
+# pkgdown <img src="man/figures/logo.png" align="right" alt="" width="120" />
+
 tyRA is an R package that I created to facilitate building models from 16S rRNA amplicon data. 
 
 To Install:

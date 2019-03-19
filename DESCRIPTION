@@ -6,7 +6,7 @@ Authors@R: person("Daniel", "Sprockett", email =
                   "daniel.sprockett@stanford.edu", 
                   role = c("aut", "cre"), comment = c(ORCID = "0000-0003-2620-7555"))
 Maintainer: The package maintainer <daniel.sprockett@stanford.edu>
-Description: Builds models from microbiome amplicon datasets.
+Description: Build models from microbiome amplicon datasets.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -8,6 +8,8 @@ template:
     bootswatch: flatly
 navbar:
   right:
+    - icon: fa-github-square fa-2x
+      href: https://github.com/DanielSprockett
     - icon: fa-dna fa-2x
       href: https://github.com/DanielSprockett
 

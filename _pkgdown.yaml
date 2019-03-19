@@ -5,7 +5,9 @@ authors:
     href: https://profiles.stanford.edu/daniel-sprockett
 template:
   params:
-    bootswatch: sandstone
+    bootswatch: flatly
 navbar:
-  type: inverse
+  right:
+    - icon: fa-github-square
+      href: https://github.com/DanielSprockett
 

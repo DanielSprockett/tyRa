@@ -1,0 +1,36 @@
+---
+title: "index"
+output: github_document
+---
+
+<img src="man/figures/logo.png" align="left" alt="" width="200" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## *Tackle Your R Analysis* ##
+
+<br/>
+
+tyRA is an R package to facilitate building models from 16S rRNA amplicon data. <br/>
+
+<br/>
+
+To Install:
+
+```
+install.packages("devtools")
+
+library(devtools)
+
+install_github("DanielSprockett/tyRa")
+```
+<br/>
+
+This package is under active development, so please let me know if you run into any issues.
+
+

@@ -1,6 +1,6 @@
 Package: tyRa
 Type: Package
-Title: Builds Models for Microbiome Data
+Title: Build Models for Microbiome Data
 Version: 0.1.0
 Authors@R: person("Daniel", "Sprockett", email = 
                   "daniel.sprockett@stanford.edu", 

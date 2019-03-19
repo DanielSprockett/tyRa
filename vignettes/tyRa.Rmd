@@ -1,7 +1,6 @@
 ---
 title: "tyRa Vignette"
 author: "Daniel Sprockett"
-date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{tyRa Vignette}
@@ -18,7 +17,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-`tyRa` ("tune-up your R analysis") is an R package that I created to facilitate building models from 16S rRNA amplicon data stored in `phyloseq` objects. 
+![](../man/figures/logo.png)
+
+`tyRa` is an R package that I created to facilitate building models from 16S rRNA amplicon data stored in `phyloseq` objects. 
 
 ## Load Pacakages
 
